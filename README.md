@@ -9,7 +9,7 @@ Fullstack web portal for an educational institution featuring an accessibility m
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-**[Live Demo (GitHub Pages)](ВСТАВЬ_СЮДА_ССЫЛКУ_ИЗ_ШАГА_5)**
+**[Live Demo (GitHub Pages)](file:///C:/Users/glari/Desktop/zaslavl/school.html)**
 
 ---
 
@@ -41,7 +41,7 @@ Fullstack web portal for an educational institution featuring an accessibility m
 
 ### Реализованный функционал (Frontend)
 * **Панель доступности (Для слабовидящих):** Настройка размера шрифта, переключение цветовых тем (Стандартная, Ч/Б, Темная), регулировка межбуквенного интервала и управление графикой.
-* **Интерактивный UI:** Кастомный слайдер с автопрокруткой, многоуровневое боковое меню (Accordion), фильтрация новостей по вкладкам без перезагрузки страницы и бесконечная карусель баннеров.
+* **Интерактивный UI:** Кастомный слайдер с автопрокруткой, многоуровневое боковое меню (Accordion), фильтрация новостей по вкладкам без перезагрузки страницы и  карусель баннеров.
 * **Мультиязычность шапки:** Переключение заголовков на лету (RU / BE / EN) через DOM-манипуляции.
 
 ### Архитектура и стек технологий
