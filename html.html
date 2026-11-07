@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru" class="color_theme_1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗАСЛАВСКАЯ ГИМНАЗИЯ №1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <div id="_wep">
+        <div class="inner">
+            <div class="options">
+                <div class="option">
+                    <span class="label">Шрифт:</span>
+                    <div class="values">
+                        <button type="button" onclick="setFontSize('small', this)">-1</button>
+                        <button type="button" onclick="setFontSize('initial', this)" class="active_option">0</button>
+                        <button type="button" onclick="setFontSize('large', this)">+1</button>
+                        <button type="button" onclick="setFontSize('huge', this)">+2</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <span class="label">Тема:</span>
+                    <div class="values">
+                        <button type="button" onclick="setColorTheme('default', this)" class="active_option">Стандарт</button>
+                        <button type="button" onclick="setColorTheme('bw', this)">Ч/Б</button>
+                        <button type="button" onclick="setColorTheme('wb', this)">Темная</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <span class="label">Интервал:</span>
+                    <div class="values">
+                        <button type="button" onclick="setSpacing('normal', this)" class="active_option">Обычный</button>
+                        <button type="button" onclick="setSpacing('large', this)">Большой</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <span class="label">Фото:</span>
+                    <div class="values">
+                        <button type="button" onclick="setImagesMode('on', this)" class="active_option">ВКЛ</button>
+                        <button type="button" onclick="setImagesMode('bw', this)">Ч/Б</button>
+                        <button type="button" onclick="setImagesMode('off', this)">ВЫКЛ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="toggleWepPanel()">Закрыть панель ✕</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-welcome">
+        <div class="hero-logo-box">
+            <svg width="130" height="130" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="96" fill="#e6eaee"/>
+                <path d="M 122 18 L 62 72 Q 54 80 65 83 L 143 66 L 134 21 Q 131 10 122 18 Z" fill="#e88300"/>
+                <path d="M 145 73 L 83 89 Q 73 93 82 100 L 156 142 L 145 73 Z" fill="#e5c324"/>
+                <path d="M 73 106 L 56 162 Q 53 173 65 173 L 154 173 Q 165 173 156 165 L 73 106 Z" fill="#a3c614"/>
+                <circle cx="155" cy="52" r="10" fill="#f3f5f8" opacity="0.8"/>
+                <circle cx="158" cy="83" r="6" fill="#f3f5f8" opacity="0.8"/>
+                <circle cx="172" cy="95" r="5" fill="#f3f5f8" opacity="0.8"/>
+            </svg>
+        </div>
+        <div class="hero-subtitle-top">Министерство образования Республики Беларусь</div>
+        <h1>ЗАСЛАВСКАЯ СРЕДНЯЯ ШКОЛА №1</h1>
+        <div class="hero-tri-bar">
+            <span class="bar-1"></span>
+            <span class="bar-2"></span>
+            <span class="bar-3"></span>
+        </div>
+        <p class="hero-desc">Добро пожаловать на официальный портал учреждения образования. Листайте вниз, чтобы перейти к новостям, расписанию и информационным ресурсам.</p>
+        <a href="#layout" class="hero-scroll-btn">Перейти к разделам сайта ↓</a>
+    </section>
+
+    <div id="layout">
+        <div id="header" class="reveal-on-scroll">
+            <div class="header_top">
+                <div class="container">
+                    <span id="date_time">Пятница, 6 ноября 2026</span>
+                    <div class="mod_buttons lng_select">
+                        <a class="wep_toggle" onclick="toggleWepPanel()" title="Режим для слабовидящих">
+                            <span>👁</span>
+                            <span>Версия для слабовидящих</span>
+                        </a>
+                        <div class="lang-flags">
+                            <a href="#" class="lang-btn active" onclick="switchLang('ru', this); return false;">RU</a>
+                            <a href="#" class="lang-btn" onclick="switchLang('be', this); return false;">BE</a>
+                            <a href="#" class="lang-btn" onclick="switchLang('en', this); return false;">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_body">
+                <div class="container">
+                    <div class="logo-emblem">
+                        <a href="#" title="На главную">
+                            <svg width="82" height="82" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="96" fill="#e6eaee"/>
+                                <path d="M 122 18 L 62 72 Q 54 80 65 83 L 143 66 L 134 21 Q 131 10 122 18 Z" fill="#e88300"/>
+                                <path d="M 145 73 L 83 89 Q 73 93 82 100 L 156 142 L 145 73 Z" fill="#e5c324"/>
+                                <path d="M 73 106 L 56 162 Q 53 173 65 173 L 154 173 Q 165 173 156 165 L 73 106 Z" fill="#a3c614"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="caption">
+                        <div class="content">
+                            <p id="ministry-text">
+                                Министерство образования Республики Беларусь<br>
+                                Государственное учреждение образования
+                            </p>
+                            <p class="self_title" id="school-title">«ЗАСЛАВСКАЯ ГИМНАЗИЯ №1»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="header_menu">
+                    <div class="hot_menu">
+                        <ul>
+                            <li class="active"><a href="#"><span>Главная</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="search_field" title="введите текст и нажмите Enter">
+                        <form class="search_form" onsubmit="handleSearch(event)">
+                            <input type="search" id="site-search-input" required placeholder="поиск по сайту...">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="body" class="main_page">
+            <div class="container">
+                <div class="main-grid">
+
+                    <aside class="sidebar">
+                        <div id="main_menu" class="reveal-on-scroll">
+                            <a href="#" class="caption_home">Навигация</a>
+                            <ul class="level_0">
+                                <li class="active">
+                                    <div class="menu-row"><a href="#"><span>Главная</span></a></div>
+                                </li>
+                                <li class="parent open">
+                                    <div class="menu-row">
+                                        <a href="https://zasl-1.minsk-roo.gov.by/об-учреждении" target="_blank"><span>Об учреждении</span></a>
+                                        <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                    </div>
+                                    <ul class="level_1">
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/история-традиции-и-достижения" target="_blank">История, традиции и достижения</a></div></li>
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/прием-в-учреждения-образования" target="_blank">Прием в учреждения образования</a></div></li>
+                                        <li class="parent">
+                                            <div class="menu-row">
+                                                <a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/одно-окно" target="_blank">Одно окно</a>
+                                                <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                            </div>
+                                            <ul class="level_2">
+                                                <li><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/одно-окно/структура-учреждения" target="_blank">Структура учреждения</a></li>
+                                                <li><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/одно-окно/график-работы-руководства-школы" target="_blank">График работы руководства школы</a></li>
+                                                <li><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/одно-окно/график-приема-граждан" target="_blank">График приема граждан</a></li>
+                                                <li><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/одно-окно/горячая-линия" target="_blank">Горячая линия</a></li>
+                                                <li><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/одно-окно/вакансии" target="_blank">Вакансии</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/контакты" target="_blank">Контакты</a></div></li>
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/цель-и-задачи" target="_blank">Цель и задачи</a></div></li>
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/руководство-школы" target="_blank">Руководство школы</a></div></li>
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/педагоги-школы" target="_blank">Педагоги школы</a></div></li>
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/питание" target="_blank">Питание</a></div></li>
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/безопасность" target="_blank">Безопасность</a></div></li>
+                                        <li><div class="menu-row"><a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/деловой-стиль-одежды" target="_blank">Деловой стиль одежды</a></div></li>
+                                    </ul>
+                                </li>
+
+                                <li class="parent">
+                                    <div class="menu-row">
+                                        <a href="https://zasl-1.minsk-roo.gov.by/жизнь-учреждения" target="_blank"><span>Жизнь учреждения</span></a>
+                                        <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                    </div>
+                                    <ul class="level_1">
+                                        <li><div class="menu-row"><a href="#" target="_blank">2026 — Год белорусской женщины</a></div></li>
+                                        <li><div class="menu-row"><a href="#" target="_blank">2025 - Год благоустройства</a></div></li>
+                                        <li><div class="menu-row"><a href="#" target="_blank">Учитель года</a></div></li>
+                                        <li><div class="menu-row"><a href="#" target="_blank">Знаменитые выпускники</a></div></li>
+                                        <li><div class="menu-row"><a href="#" target="_blank">Режим работы школы</a></div></li>
+                                        <li><div class="menu-row"><a href="#" target="_blank">Энергосбережение</a></div></li>
+                                        <li><div class="menu-row"><a href="#" target="_blank">Белая Русь</a></div></li>
+                                        <li><div class="menu-row"><a href="#" target="_blank">Здоровый образ жизни</a></div></li>
+                                        <li><div class="menu-row"><a href="#" target="_blank">Фотогалерея</a></div></li>
+                                    </ul>
+                                </li>
+
+                                <li class="parent">
+                                    <div class="menu-row">
+                                        <a href="https://zasl-1.minsk-roo.gov.by/воспитательная-работа" target="_blank"><span>Воспитательная работа</span></a>
+                                        <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                    </div>
+                                    <ul class="level_1">
+                                        <li><div class="menu-row"><a href="#">Оздоровление</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Профилактика наркомании</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Листовки и памятки</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Профилактика ДДТТ</a></div></li>
+                                        <li><div class="menu-row"><a href="#">МЧС предупреждает</a></div></li>
+                                        <li><div class="menu-row"><a href="#">ШАГ 2026/2027</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Шестой школьный день</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Военно-патриотическое воспитание</a></div></li>
+                                    </ul>
+                                </li>
+
+                                <li class="parent">
+                                    <div class="menu-row">
+                                        <a href="https://zasl-1.minsk-roo.gov.by/учащемуся" target="_blank"><span>Учащемуся</span></a>
+                                        <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                    </div>
+                                    <ul class="level_1">
+                                        <li><div class="menu-row"><a href="#">БРСМ</a></div></li>
+                                        <li><div class="menu-row"><a href="#">БРПО</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Профориентационная работа</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Выпускнику - 2026</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Государственный школьный стандарт</a></div></li>
+                                    </ul>
+                                </li>
+
+                                <li class="parent">
+                                    <div class="menu-row">
+                                        <a href="https://zasl-1.minsk-roo.gov.by/родителю" target="_blank"><span>Родителю</span></a>
+                                        <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                    </div>
+                                    <ul class="level_1">
+                                        <li><div class="menu-row"><a href="#">Правила родителей и учащихся</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Организация приема в 1-е классы</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Родительский университет</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Рекомендации родителям</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Страничка дефектолога</a></div></li>
+                                    </ul>
+                                </li>
+
+                                <li class="parent">
+                                    <div class="menu-row">
+                                        <a href="https://zasl-1.minsk-roo.gov.by/учительская" target="_blank"><span>Учительская</span></a>
+                                        <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                    </div>
+                                    <ul class="level_1">
+                                        <li><div class="menu-row"><a href="#">Инновационный проект</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Специальное образование</a></div></li>
+                                        <li><div class="menu-row"><a href="#">НОУ «Академия ПЕРВЫХ»</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Методическая копилка</a></div></li>
+                                    </ul>
+                                </li>
+
+                                <li class="parent">
+                                    <div class="menu-row">
+                                        <a href="https://zasl-1.minsk-roo.gov.by/сервисы" target="_blank"><span>Сервисы</span></a>
+                                        <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                    </div>
+                                    <ul class="level_1">
+                                        <li><div class="menu-row"><a href="#">Архив новостей</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Карта сайта</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Поиск по сайту</a></div></li>
+                                    </ul>
+                                </li>
+
+                                <li class="parent">
+                                    <div class="menu-row">
+                                        <a href="https://zasl-1.minsk-roo.gov.by/обращения/электронное-обращение" target="_blank"><span>Обращения</span></a>
+                                        <button class="sub-toggle" onclick="toggleSubmenu(this)">▸</button>
+                                    </div>
+                                    <ul class="level_1">
+                                        <li><div class="menu-row"><a href="#">Электронное обращение</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Нормативные документы</a></div></li>
+                                        <li><div class="menu-row"><a href="#">Телефон горячей линии</a></div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="panel reveal-on-scroll">
+                            <div class="panel-heading">Опросы</div>
+                            <div class="panel-body">
+                                <div>Нет доступных опросов</div>
+                                <a class="poll_results" href="https://zasl-1.minsk-roo.gov.by/сервисы/результаты-опросов" target="_blank">Результаты опросов →</a>
+                            </div>
+                        </div>
+
+                        <div class="panel attention_block reveal-on-scroll">
+                            <div class="panel-heading">Обратите внимание</div>
+                            <div class="panel-body">
+                                <div class="item"><a href="https://zasl-1.minsk-roo.gov.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/35633/ico/%D0%B6%D0%B8%D0%BB%D0%B5%D1%82.jpg" alt="Безопасность" onerror="this.src='https://placehold.co/320x180/2c4c6b/ffffff?text=Безопасность+на+воде'"></a></div>
+                                <div class="item"><a href="https://zasl-1.minsk-roo.gov.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/35613/ico/%D0%B2%D0%BE%D0%B4%D0%B0.jpg" alt="Вода" onerror="this.src='https://placehold.co/320x180/e88300/ffffff?text=Правила+у+водоемов'"></a></div>
+                                <div class="item"><a href="https://zasl-1.minsk-roo.gov.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/35343/ico/Evakuatsiya-02.09-web_page-0002.jpg" alt="Эвакуация" onerror="this.src='https://placehold.co/320x180/a3c614/ffffff?text=Памятка+МЧС'"></a></div>
+                                <div class="item"><a href="https://zasl-1.minsk-roo.gov.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/35093/ico/10.jpg" alt="Инфографика" onerror="this.src='https://placehold.co/320x180/2c4c6b/ffffff?text=Инфографика+школы'"></a></div>
+                                <div class="item"><a href="https://zasl-1.minsk-roo.gov.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/35113/ico/6.jpg" alt="Памятка" onerror="this.src='https://placehold.co/320x180/e88300/ffffff?text=Обратите+внимание'"></a></div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="main_content">
+
+                        <div id="main_slider" class="reveal-on-scroll">
+                            <div class="slider-slide active" style="background-image: url('https://zasl-1.minsk-roo.gov.by/files/00451/obj/260/34853/ico/Вечер школа.jpg'), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80');">
+                                <div class="slider-caption">ГУО «Заславская гимназия №1» — традиции и современное образование</div>
+                            </div>
+                            <div class="slider-slide" style="background-image: url('https://zasl-1.minsk-roo.gov.by/files/00451/obj/260/34723/ico/6533.jpg'), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80');">
+                                <div class="slider-caption">Добро пожаловать на официальный сайт!</div>
+                            </div>
+
+                            <button type="button" class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                            <button type="button" class="slider-btn next" onclick="changeSlide(1)">❯</button>
+
+                            <div class="slider-dots">
+                                <button type="button" class="slider-dot active" onclick="goToSlide(0)"></button>
+                                <button type="button" class="slider-dot" onclick="goToSlide(1)"></button>
+                            </div>
+                        </div>
+
+                        <div id="hot_links" class="reveal-on-scroll">
+                            <div class="item">
+                                <a href="https://mvd.gov.by/ru/page/glavnoe-upravlenie-ohrany-pravoporyadka-i-profilaktiki/polezno-znat-detyam-i-roditelyam" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/35183/ico/%D0%BC%D1%83%D1%81.png" alt="МВД" onerror="this.src='https://placehold.co/300x160/2c4c6b/ffffff?text=МВД+Беларуси'"></div>
+                                    <span class="title">Полезно знать детям и родителям</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D0%BE%D0%B1-%D1%83%D1%87%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8/%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C/%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D0%BD%D0%B8%D0%BA%D1%83%D0%BB%D1%8B" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/35053/ico/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%202.jpg" alt="Безопасные каникулы" onerror="this.src='https://placehold.co/300x160/e88300/ffffff?text=Безопасные+каникулы'"></div>
+                                    <span class="title">Безопасные каникулы</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D0%BE%D0%B1-%D1%83%D1%87%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8/%D0%BE%D0%B4%D0%BD%D0%BE-%D0%BE%D0%BA%D0%BD%D0%BE/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D1%80%D0%B5%D0%B9%D1%82%D0%B8%D0%BD%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B8" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/35063/ico/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB.jpg" alt="Портал" onerror="this.src='https://placehold.co/300x160/a3c614/ffffff?text=Портал+оценки'"></div>
+                                    <span class="title">Портал рейтинговой оценки</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D1%83%D1%87%D0%B0%D1%89%D0%B5%D0%BC%D1%83%D1%81%D1%8F/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D0%B6%D0%B8" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/32423/ico/3.png" alt="Трудоустройство" onerror="this.src='https://placehold.co/300x160/2c4c6b/ffffff?text=Трудоустройство'"></div>
+                                    <span class="title">Трудоустройство молодежи</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D0%B2%D0%BE%D1%81%D0%BF%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/kidspomogut-by" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/31583/ico/3.jpg" alt="KIDSPOMOGUT" onerror="this.src='https://placehold.co/300x160/e88300/ffffff?text=KIDSPOMOGUT.BY'"></div>
+                                    <span class="title">Безопасность детей в сети</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D0%B2%D0%BE%D1%81%D0%BF%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B8-%D0%B8-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%B8" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/31343/ico/%D0%A0%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA1.jpg" alt="Психологическая помощь" onerror="this.src='https://placehold.co/300x160/a3c614/ffffff?text=СППС+Помощь'"></div>
+                                    <span class="title">ОКАЗАНИЕ СОЦИАЛЬНО-ПЕДАГОГИЧЕСКОЙ ПОДДЕРЖКИ И ПСИХОЛОГИЧЕСКОЙ ПОМОЩИ</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D0%B2%D0%BE%D1%81%D0%BF%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D0%B6%D0%B8-%D0%B2-%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5-%D0%BE%D1%82-%D1%83%D1%87%D0%B5%D0%B1%D1%8B-%D0%B2%D1%80%D0%B5%D0%BC%D1%8F" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/29203/ico/1.jpg" alt="Молодежь" onerror="this.src='https://placehold.co/300x160/2c4c6b/ffffff?text=Занятость+молодежи'"></div>
+                                    <span class="title">Трудоустройство молодежи в свободное от учебы время</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F/%D0%B8%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/25683/ico/%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_vi.jpg" alt="Инновационный проект" onerror="this.src='https://placehold.co/300x160/e88300/ffffff?text=Инновационный+проект'"></div>
+                                    <span class="title">Инновационный проект</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F/%D0%BD%D0%BE%D1%83-%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F-%D0%BD%D0%B0%D1%83%D0%BA" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/20813/ico/1-111.png" alt="НОУ" onerror="this.src='https://placehold.co/300x160/a3c614/ffffff?text=НОУ+Академия+наук'"></div>
+                                    <span class="title">НОУ «ПЕРВАЯ академия наук»</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D0%BE%D0%B1-%D1%83%D1%87%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8/%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D1%82%D0%B8%D0%BB%D1%8C-%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D1%8B" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/20673/ico/photo_2022-08-03_11-14-50.jpg" alt="Деловой стиль" onerror="this.src='https://placehold.co/300x160/2c4c6b/ffffff?text=Деловой+стиль'"></div>
+                                    <span class="title">Деловой стиль одежды</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D0%B2%D0%BE%D1%81%D0%BF%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D1%8C-%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%B8" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/20543/ico/1.jpg" alt="Молодёжь Беларуси" onerror="this.src='https://placehold.co/300x160/e88300/ffffff?text=Молодёжь+Беларуси'"></div>
+                                    <span class="title">Молодёжь Беларуси</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://zasl-1.minsk-roo.gov.by/%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8E/%D0%B4%D0%BE%D0%BC-%D0%B1%D0%B5%D0%B7-%D0%BD%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F" target="_blank">
+                                    <div class="preview"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/23963/ico/logo.jpg" alt="Дом без насилия" onerror="this.src='https://placehold.co/300x160/a3c614/ffffff?text=Дом+без+насилия'"></div>
+                                    <span class="title">Дом без насилия</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="reveal-on-scroll">
+                            <ul class="nav-tabs">
+                                <li class="active"><a onclick="openNewsTab('tab1', this)">Новости учреждения</a></li>
+                                <li><a onclick="openNewsTab('tab2', this)">Района</a></li>
+                                <li><a onclick="openNewsTab('tab3', this)">Региона</a></li>
+                                <li><a onclick="openNewsTab('tab4', this)">Министерства</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="tab1" class="tab-pane active">
+                                    <div class="hot_news">
+                                        <div class="item">
+                                            <h3><a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34783.html" target="_blank">Республиканская акция</a></h3>
+                                            <div class="anno">Лето - это мы! Лето - для страны!</div>
+                                            <span class="date">29 мая 2026</span>
+                                            <a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34783.html" target="_blank" class="read_more">Подробнее...</a>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34773.html" target="_blank">Воспитательно-оздоровительный дневной лагерь "Планета первых"</a></h3>
+                                            <span class="date">14 мая 2026</span>
+                                            <a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34773.html" target="_blank" class="read_more">Подробнее...</a>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34763.html" target="_blank">Школьный оздоровительный лагерь "Чудо школа"</a></h3>
+                                            <span class="date">14 мая 2026</span>
+                                            <a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34763.html" target="_blank" class="read_more">Подробнее...</a>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34753.html" target="_blank">15 мая стартует информационно-пропагандистская акция «Безопасные каникулы»</a></h3>
+                                            <div class="anno">С 15 мая по 31 августа во всех регионах страны будет проходить республиканская информационно-пропагандистская акция «Безопасные каникулы».</div>
+                                            <span class="date">11 мая 2026</span>
+                                            <a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34753.html" target="_blank" class="read_more">Подробнее...</a>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34743.html" target="_blank">Маленький прибор спасает тысячи жизней:</a></h3>
+                                            <div class="anno">в стране стартовала масштабная кампания по установке АПИ</div>
+                                            <span class="date">11 мая 2026</span>
+                                            <a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34743.html" target="_blank" class="read_more">Подробнее...</a>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34393.html" target="_blank">Республиканская молодежная ярмарка вакансий</a></h3>
+                                            <span class="date">13 апреля 2026</span>
+                                            <a href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей/p-34393.html" target="_blank" class="read_more">Подробнее...</a>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <a class="news_archive" href="https://zasl-1.minsk-roo.gov.by/сервисы/архив-новостей" target="_blank">Архив новостей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab-pane">
+                                    <div class="hot_news">
+                                        <div class="item">
+                                            <h3><a href="https://minsk-roo.gov.by/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/%D0%B0%D1%80%D1%85%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9/p-100633.html" target="_blank">Интересно, полезно, безопасно проходят осенние каникулы в школах Пристоличья!</a></h3>
+                                            <span class="date">05.11.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://minsk-roo.gov.by/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/%D0%B0%D1%80%D1%85%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9/p-100623.html" target="_blank">Помогите спасти жизнь</a></h3>
+                                            <span class="date">29.10.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://minsk-roo.gov.by/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/%D0%B0%D1%80%D1%85%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9/p-100613.html" target="_blank">Диалог поколений: духовно-нравственные ориентиры в гражданско-патриотическом воспитании</a></h3>
+                                            <span class="date">27.10.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://minsk-roo.gov.by/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/%D0%B0%D1%80%D1%85%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9/p-100603.html" target="_blank">III Республиканский конкурс «Открываем Беларусь»</a></h3>
+                                            <span class="date">27.10.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://minsk-roo.gov.by/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/%D0%B0%D1%80%D1%85%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9/p-100593.html" target="_blank">Битва умов: юные математики района покоряли сложные задачи</a></h3>
+                                            <span class="date">26.10.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://minsk-roo.gov.by/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/%D0%B0%D1%80%D1%85%D0%B8%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9/p-100583.html" target="_blank">К МЕЖДУНАРОДНОМУ ДНЮ ПОВАРА</a></h3>
+                                            <span class="date">21.10.2026</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="tab-pane">
+                                    <div class="hot_news">
+                                        <div class="item">
+                                            <h3><a href="https://uomoik.gov.by/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/p-102323.html" target="_blank">Аграрный форум «5 шагов к качеству» собрал в БГАТУ учащихся Минщины</a></h3>
+                                            <span class="date">06.11.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://uomoik.gov.by/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/p-102313.html" target="_blank">На Минщине пройдет областной этап республиканского конкурса компьютерных разработок патриотической направленности «Патриот.by»</a></h3>
+                                            <span class="date">06.11.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://uomoik.gov.by/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/p-102303.html" target="_blank">Подведены итоги областного чемпионата по финансовой грамотности и предпринимательству</a></h3>
+                                            <span class="date">05.11.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://uomoik.gov.by/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/p-102293.html" target="_blank">Семинар-совещание Совета руководителей, заместителей директора по учебной работе Минской области</a></h3>
+                                            <span class="date">05.11.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://uomoik.gov.by/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/p-102283.html" target="_blank">Областной образовательный интенсив «Время молодых!»</a></h3>
+                                            <span class="date">04.11.2026</span>
+                                        </div>
+                                        <div class="item">
+                                            <h3><a href="https://uomoik.gov.by/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/p-102273.html" target="_blank">Эффективный диалог и обмен опытом: в Солигорске прошло заседание областного учебно-методического объединения учителей иностранного языка</a></h3>
+                                            <span class="date">04.11.2026</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab4" class="tab-pane">
+                                    <div class="hot_news">
+                                        <div class="item">
+                                            <h3><a href="https://edu.gov.by/news/" target="_blank">Архив новостей Министерства образования Республики Беларусь</a></h3>
+                                            <span class="date">06.11.2026</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="banners_slider_wrapper" class="reveal-on-scroll">
+                    <button class="banner-nav prev" onclick="scrollBanners(-1)">❮</button>
+                    <div class="banners-track-viewport">
+                        <div class="banners-track" id="banners-track">
+                            <div class="item"><a href="https://president.gov.by/ru" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/31123/ico/przdnt.png" alt="Президент РБ" onerror="this.src='https://placehold.co/140x70/2c4c6b/ffffff?text=president.gov.by'"></a></div>
+                            <div class="item"><a href="https://edu.gov.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/17803/ico/%D0%BC%D0%B8%D0%BD%D0%BE%D0%B1%D1%80%D0%B1%D0%B0%D0%BD%D0%BD.png" alt="МинОбр" onerror="this.src='https://placehold.co/140x70/2c4c6b/ffffff?text=edu.gov.by'"></a></div>
+                            <div class="item"><a href="https://uomoik.gov.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/17813/ico/logo%20%D1%83%D0%BF%D1%80%20%D0%BE%D0%B1%D1%80%20%D0%BC%D0%B8%D0%BD%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BA%D0%BE%D0%BC.png" alt="УОМОИК" onerror="this.src='https://placehold.co/140x70/2c4c6b/ffffff?text=uomoik.gov.by'"></a></div>
+                            <div class="item"><a href="https://minsk-roo.gov.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/23483/ico/%D1%83%D0%BF%D1%80%20%D0%BF%D0%BE%20%D0%BE%D0%B1%D1%80.jpg" alt="Минский РОО" onerror="this.src='https://placehold.co/140x70/2c4c6b/ffffff?text=minsk-roo.gov.by'"></a></div>
+                            <div class="item"><a href="http://pravo.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/17783/ico/%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D0%B1%D0%B0%D0%B9.png" alt="Pravo.by" onerror="this.src='https://placehold.co/140x70/2c4c6b/ffffff?text=pravo.by'"></a></div>
+                            <div class="item"><a href="https://mchs.gov.by/mobilnoe-prilozhenie-mchs-belarusi-pomoshch-ryadom/" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/17773/ico/125%D1%85125.png" alt="МЧС" onerror="this.src='https://placehold.co/140x70/2c4c6b/ffffff?text=МЧС+Беларуси'"></a></div>
+                            <div class="item"><a href="http://belaruslibrary.nlb.by" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/17833/ico/logo-belarus-library-138x120.png" alt="НББ" onerror="this.src='https://placehold.co/140x70/2c4c6b/ffffff?text=Библиотека'"></a></div>
+                            <div class="item"><a href="https://pedklassy.bspu.by/" target="_blank"><img src="https://zasl-1.minsk-roo.gov.by/files/00451/obj/270/23473/ico/%D0%BF%D0%B5%D0%B4%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B.jpg" alt="Педклассы" onerror="this.src='https://placehold.co/140x70/2c4c6b/ffffff?text=Педклассы'"></a></div>
+                        </div>
+                    </div>
+                    <button class="banner-nav next" onclick="scrollBanners(1)">❯</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer" class="reveal-on-scroll">
+            <div class="footer_top container">
+                <span>© Государственное учреждение образования «ЗАСЛАВСКАЯ ГИМНАЗИЯ №1», <span id="footer-year">2026</span></span>
+                <a style="opacity: 0.7; color: #fff;" href="http://веб-мастерская.бел" target="_blank">ВЕБ-МАСТЕРСКАЯ.БЕЛ</a>
+            </div>
+            <div class="footer_body">
+                <div class="container">
+                    <div>
+                        <div class="footer_contacts">
+                            Минская область, Минский район, г.Заславль, ул. Советская 28, 223036<br>
+                            <a href="https://zasl-1.minsk-roo.gov.by/об-учреждении/контакты" target="_blank">
+                                <b>Телефон: т.8017 516-31-52 (директор) &nbsp; 8017 516-31-57 (приемная)</b>
+                            </a><br>
+                            Электронная почта: zasl-1@guo.bc.by
+                        </div>
+                    </div>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="https://zasl-1.minsk-roo.gov.by/сервисы/карта-сайта" target="_blank">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span id="scroll_up_button" onclick="scrollToTop()" title="К началу страницы">▲</span>
+    </body>
+</html>
