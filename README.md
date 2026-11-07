@@ -13,9 +13,9 @@ Fullstack web portal for an educational institution featuring an accessibility m
 
 ---
 
-## 🇬🇧 English Description
+## English Description
 
-**Zaslavl Gymnasium No. 1 Web Portal** is a fullstack web application project for an educational institution. Currently featuring a complete, responsive frontend with a dedicated accessibility module (WCAG-inspired), the project is actively expanding to integrate an enterprise-grade **Java (Spring Boot)** backend supporting **RESTful APIs**, **SOAP web services**, and a relational **SQL database**.
+**Zaslavl School No. 1 Web Portal** is a fullstack web application project for an educational institution. Currently featuring a complete, responsive frontend with a dedicated accessibility module (WCAG-inspired), the project is actively expanding to integrate an enterprise-grade **Java (Spring Boot)** backend supporting **RESTful APIs**, **SOAP web services**, and a relational **SQL database**.
 
 ### Key Features (Frontend)
 * **Accessibility Module (Visually Impaired Mode):** Dynamic font scaling, color scheme switching (Standard, Black & White, Dark), letter-spacing adjustments, and image display controls.
