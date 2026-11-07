@@ -25,8 +25,8 @@ Fullstack web portal for an educational institution featuring an accessibility m
 
 ### Project Structure & Tech Stack
 * **Frontend (Implemented):**
-  * `index.html`, `style.css`, `script.js` — Clean modular architecture (Semantic HTML5, CSS Variables/Grid/Flexbox, Vanilla ES6+ JS).
-  * `svaga2_full.html` — Standalone all-in-one bundle for quick local preview.
+  * `html.html`, `style.css`, `script.js` — Clean modular architecture (Semantic HTML5, CSS Variables/Grid/Flexbox, Vanilla ES6+ JS).
+  * `index.html` — Standalone all-in-one bundle for quick local preview.
 * **Backend & Database (In Progress / Roadmap):**
   * **Java & Spring Boot** — Core server architecture and business logic.
   * **Spring Data JPA & SQL** — Persistent storage for news, schedules, and school administration data.
@@ -46,8 +46,8 @@ Fullstack web portal for an educational institution featuring an accessibility m
 
 ### Архитектура и стек технологий
 * **Frontend (Готово):**
-  * `index.html`, `style.css`, `script.js` — Модульная сборка (HTML5, CSS3 Grid/Flexbox, Vanilla JS).
-  * `svaga2_full.html` — Монолитная самодостаточная версия (All-in-One) для быстрого локального запуска.
+  * `html.html`, `style.css`, `script.js` — Модульная сборка (HTML5, CSS3 Grid/Flexbox, Vanilla JS).
+  * `index.html` — Монолитная самодостаточная версия (All-in-One) для быстрого локального запуска.
 * **Backend и БД (В разработке / Roadmap):**
   * **Java & Spring Boot** — Серверная логика и обработка запросов.
   * **SQL & Spring Data JPA** — Хранение новостей, расписания и структуры учреждения в БД.
