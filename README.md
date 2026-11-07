@@ -9,7 +9,7 @@ Fullstack web portal for an educational institution featuring an accessibility m
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-**[Live Demo (GitHub Pages)](file:///C:/Users/glari/Desktop/zaslavl/school.html)**
+**[Live Demo (GitHub Pages)](https://dimonik007.github.io/School-web/)**
 
 ---
 
